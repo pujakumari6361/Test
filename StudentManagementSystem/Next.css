@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main {
+    max-width: 900px;
+    width: 100%;
+    background: white;
+    display: grid;
+    gap: 30px;
+    padding: 30px 20px;
+    text-align: center;
+
+}
+
+.container-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.header h1 {
+    color: #1864d5;
+    font-size: 34px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.header p {
+    grid-column: 1;
+    color: #0c74a8;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.Student {
+    padding:  25px 20px 30px;
+    width: 400px;
+    border: 2px solid #f0f2f5;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid #ccc;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Student:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.Student img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.Student p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0 20px 0;
+}
+
+.Student a.button {
+    display: flex;
+    padding: 10px 20px;
+    background: rgb(47, 60, 204);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: auto;
+    cursor: pointer;
+    width: 320px;
+    flex-direction: column;
+    border-radius: 12px;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.Student a.button:hover {
+    background-color: #0f4bbd;
+}
+
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.main h1, .main p {
+    grid-column: span 1;
+}

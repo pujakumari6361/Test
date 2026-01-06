@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="Registration.css">
+</head>
+<body>
+   <div class="main-container">
+        <div class="fb-card">
+            <h1>Student Registration Form</h1>
+            
+            <div class="name-row">
+                <input type="text" id="fname" placeholder="First name">
+                <input type="text" id="lname" placeholder="Last name">
+            </div>
+
+            <div class="name-row">
+                <input type="text" id="pname" placeholder="Father's Name">
+                <input type="text" id="mname" placeholder="Mother's Name">
+            </div>
+
+            <input type="text" id="email" placeholder="Email Id">
+            <input type="text" id="mobile" placeholder="Mobile Number">
+            <input type="text" id="roll" placeholder="Roll Number">
+
+            <label class="label-text">Birthday</label>
+            <div class="dob-row">
+                <select id="day">
+                    <option value="0">Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    
+                </select>
+                <select id="month">
+                    <option value="0">Month</option>
+                    <option value="1">january</option>
+                    <option value="2">february</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <select id="year">
+                    <option value="0">Year</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                </select>
+            </div>
+
+            <label class="label-text">Gender</label>
+            <select id="gender">
+                <option value="">Select Gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Custom">Custom</option>
+            </select>
+
+            <label>Select Course</label>
+            <select id="course">
+                <option value="">Select</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Physics">Physics</option>
+            </select>
+
+            <label>Select Branch</label>
+            <select id="branch">
+                <option value="">Select</option>
+                <option value="Computer Science">Computer Science & Engineering</option>
+                <option value="Mathematics">Fire Technology & Safety</option>
+                <option value="Physics">Electrical & Electronics Engineering</option>
+                <option value="Mechanical">Mechanical Engineering</option>
+                <option value="Civil">Civil Engineering</option>
+                <option value="ECE">Electronics & Communication Engineering</option>
+                <option value="IT">Information Technology</option>
+            </select>
+
+            <label>Address</label>
+            <textarea id="address" placeholder="Enter your address here..."></textarea>
+
+            <label>Student Photo</label>
+            <input type="file" id="studentPhoto">
+
+            <p id="msg"></p>
+
+            <button type="button" onclick="validateRegistration()">Registration</button>
+        </div>
+    </div>
+    <script src="Registration.js"></script>
+</body>
+</html>

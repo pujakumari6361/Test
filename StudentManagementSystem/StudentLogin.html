@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student Login</title>
+        <link rel="stylesheet" href="StudentLogin.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="student">Student Management System</h1>
+            <p class="tagline">Student Login Page</p>
+            
+            <div class="login-box">
+                <input type="text" id="fname" placeholder="Full Name">
+                <input type="number" id="roll" placeholder="Roll Number">
+                <input type="text" id="course" placeholder="Course">
+
+                <button onclick="login()">Log in</button> 
+
+                <div class="Next">
+                    <a href="Next.html">
+                    <button class="Next">Next</button>
+                    </a>
+                </div>
+
+                <div class="form-group">
+                   <p id="message"></p>
+                </div>   
+            </div>
+        </div>
+        <script src="StudentLogin.js"></script>
+    </body>
+</html>

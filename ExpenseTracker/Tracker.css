@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+}
+
+.container {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.student {
+    color: #1877f2;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.main {
+    width: 350px;
+    background: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main input {
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 1px solid #dddfe2;
+    font-size: 15px;
+}
+
+.main button {
+    width: 50%;
+    padding: 12px;
+    background-color: #1877f2;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.main button:hover {
+    background-color: #1877f2;
+}
+    
+.main .h2 {
+    color: #101012;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#expenseList {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+#expenseList li {
+  background: #eeeeee;
+  margin: 5px 0;
+  padding: 6px;
+  border-radius: 5px;
+  font-size: 14px;
+}

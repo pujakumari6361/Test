@@ -6,29 +6,28 @@ function login() {
 
   //Message reset
   message.style.color = "red";
-
+   
     // Full Name Check
    if (fname === "") {
         message.innerText = "Enter full name.";
-        return;
+        return ;
     }
 
     // Roll Number Check
     if (roll.length < 6) {
         message.innerText = "Roll number should be at least 6 characters.";
-        return;
+        return ;
     }
 
     // Course Check
     if (course === "") {
         message.innerText = "Enter course.";
-        return;
+        return ;
     }
 
     else {
     message.innerText = "Login successful!";
     message.style.color = "green";
   }
-
 
 }

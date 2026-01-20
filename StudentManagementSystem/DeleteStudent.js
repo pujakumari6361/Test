@@ -26,7 +26,7 @@ function DeleteStudent(){
     else {
     message.innerText = "Delete successful!";
     message.style.color = "green";
-     alert("Deleted successful!.");
+    alert("Deleted successful!.");
   }
 
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="Tracker.css">
+</head>
+<body>
+   <div class="container">
+        <h1 class="student">Student Expense Tracker</h1>
+            
+        <div class="main">
+            <input type="text" id="expense" placeholder="Expense Name">
+            <input type="number" id="Amount" placeholder="Amount">   
+            <button id="button" onclick="addExpense()">Add Expense</button>
+            
+            <div class="form-group">
+                <p id="message"></p>
+            </div>  
+            
+            <h2>Expense</h2>
+            <ul id="expanseList"></ul>
+
+            <div class="form-group">
+                <p id="msg"></p>
+            </div>
+
+            <ul id="list"></ul>
+            <h3>Total: <span id="total">0</span></h3>
+
+        </div>
+    </div>
+    <script src="Tracker.js"></script>   
+</body>
+</html>

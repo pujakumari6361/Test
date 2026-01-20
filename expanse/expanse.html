@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expanse.css">
+</head>
+<body>
+   <div class="container">
+        <h1>Student Expense Tracker</h1>
+            
+        <div class="main">
+            <input type="text" id="expense" placeholder="Expense Name">
+            <input type="number" id="Amount" placeholder="Amount">
+            <input type="date" id="Date">
+            <button onclick="addExpense()">Add Expense</button>
+
+            <h2>Expense List</h2>
+
+            <table border="1" width="100%">
+                <thead>
+                    <tr>
+                        <th>Expense Name</th>
+                        <th>Amount (₹)</th>
+                        <th>Date</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+
+            <h3>Total: ₹ <span id="total">0</span></h3>
+        </div>
+   </div>
+
+   <script src="expanse.js"></script>
+</body>
+</html>

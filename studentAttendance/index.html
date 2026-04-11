@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>📊 Attendance System</h1>
+
+  <!-- Add Student -->
+  <div class="card">
+    <h2>Add Student</h2>
+    <input type="text" id="name" placeholder="Enter student name">
+    <button onclick="addStudent()">Add</button>
+  </div>
+
+  <!-- Attendance -->
+  <div class="card">
+    <h2>Mark Attendance</h2>
+    <div id="list"></div>
+    <button onclick="saveAttendance()">Save Attendance</button>
+  </div>
+
+  <!-- Student Panel -->
+  <div class="card">
+    <h2>Student Panel</h2>
+    <select id="student"></select>
+    <button onclick="showAttendance()">View</button>
+    <div id="output"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
